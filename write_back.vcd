@@ -1,0 +1,37 @@
+$date
+	Thu Jun 18 02:44:14 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module write_back_tb $end
+$var wire 32 ! write_data [31:0] $end
+$var reg 1 " MemToReg $end
+$var reg 32 # alu_result [31:0] $end
+$var reg 32 $ memory_data [31:0] $end
+$scope module uut $end
+$var wire 1 " MemToReg $end
+$var wire 32 % alu_result [31:0] $end
+$var wire 32 & memory_data [31:0] $end
+$var wire 32 ' write_data [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11110 '
+b110111 &
+b11110 %
+b110111 $
+b11110 #
+0"
+b11110 !
+$end
+#10000
+b110111 !
+b110111 '
+1"
+#20000

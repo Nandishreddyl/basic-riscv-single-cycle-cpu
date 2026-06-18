@@ -1,0 +1,237 @@
+$date
+	Thu Jun 18 03:08:11 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module cpu_top_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 1 # zero $end
+$var wire 32 $ write_data [31:0] $end
+$var wire 5 % rs2 [4:0] $end
+$var wire 5 & rs1 [4:0] $end
+$var wire 32 ' read_data2 [31:0] $end
+$var wire 32 ( read_data1 [31:0] $end
+$var wire 5 ) rd [4:0] $end
+$var wire 32 * pc_out [31:0] $end
+$var wire 7 + opcode [6:0] $end
+$var wire 32 , instruction [31:0] $end
+$var wire 7 - funct7 [6:0] $end
+$var wire 3 . funct3 [2:0] $end
+$var wire 32 / alu_result [31:0] $end
+$var wire 1 0 RegWrite $end
+$var wire 1 1 MemWrite $end
+$var wire 1 2 MemRead $end
+$var wire 1 3 Branch $end
+$var wire 3 4 ALUControl [2:0] $end
+$scope module alu_inst $end
+$var wire 1 # Zero $end
+$var wire 32 5 B [31:0] $end
+$var wire 3 6 ALUControl [2:0] $end
+$var wire 32 7 A [31:0] $end
+$var reg 32 8 Result [31:0] $end
+$upscope $end
+$scope module cu_inst $end
+$var wire 7 9 opcode [6:0] $end
+$var wire 7 : funct7 [6:0] $end
+$var wire 3 ; funct3 [2:0] $end
+$var reg 3 < ALUControl [2:0] $end
+$var reg 1 3 Branch $end
+$var reg 1 2 MemRead $end
+$var reg 1 1 MemWrite $end
+$var reg 1 0 RegWrite $end
+$upscope $end
+$scope module decoder_inst $end
+$var wire 5 = rs2 [4:0] $end
+$var wire 5 > rs1 [4:0] $end
+$var wire 5 ? rd [4:0] $end
+$var wire 7 @ opcode [6:0] $end
+$var wire 32 A instruction [31:0] $end
+$var wire 7 B funct7 [6:0] $end
+$var wire 3 C funct3 [2:0] $end
+$upscope $end
+$scope module imem_inst $end
+$var wire 32 D instruction [31:0] $end
+$var wire 32 E address [31:0] $end
+$upscope $end
+$scope module pc_inst $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var reg 32 F pc_out [31:0] $end
+$upscope $end
+$scope module rf_inst $end
+$var wire 1 ! clk $end
+$var wire 5 G rd [4:0] $end
+$var wire 32 H read_data1 [31:0] $end
+$var wire 32 I read_data2 [31:0] $end
+$var wire 5 J rs1 [4:0] $end
+$var wire 5 K rs2 [4:0] $end
+$var wire 1 0 we $end
+$var wire 32 L write_data [31:0] $end
+$var integer 32 M i [31:0] $end
+$upscope $end
+$scope module wb_inst $end
+$var wire 1 N MemToReg $end
+$var wire 32 O alu_result [31:0] $end
+$var wire 32 P memory_data [31:0] $end
+$var wire 32 Q write_data [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11110 Q
+b0 P
+b11110 O
+0N
+b100000 M
+b11110 L
+b10 K
+b1 J
+b10100 I
+b1010 H
+b101 G
+b0 F
+b0 E
+b1000001000001010110011 D
+b0 C
+b0 B
+b1000001000001010110011 A
+b110011 @
+b101 ?
+b1 >
+b10 =
+b0 <
+b0 ;
+b0 :
+b110011 9
+b11110 8
+b1010 7
+b0 6
+b10100 5
+b0 4
+03
+02
+01
+10
+b11110 /
+b0 .
+b0 -
+b1000001000001010110011 ,
+b110011 +
+b0 *
+b101 )
+b1010 (
+b10100 '
+b1 &
+b10 %
+b11110 $
+0#
+1"
+0!
+$end
+#5000
+1!
+#10000
+0!
+0"
+#15000
+b11111111111111111111111111110110 $
+b11111111111111111111111111110110 L
+b11111111111111111111111111110110 Q
+b11111111111111111111111111110110 /
+b11111111111111111111111111110110 8
+b11111111111111111111111111110110 O
+b1 4
+b1 6
+b1 <
+10
+b100000 -
+b100000 :
+b100000 B
+b110 )
+b110 ?
+b110 G
+b1000000001000001000001100110011 ,
+b1000000001000001000001100110011 A
+b1000000001000001000001100110011 D
+b100 *
+b100 E
+b100 F
+1!
+#20000
+0!
+#25000
+x#
+bx $
+bx L
+bx Q
+bx /
+bx 8
+bx O
+b0 4
+b0 6
+b0 <
+00
+bx -
+bx :
+bx B
+bx '
+bx 5
+bx I
+bx %
+bx =
+bx K
+bx (
+bx 7
+bx H
+bx &
+bx >
+bx J
+bx .
+bx ;
+bx C
+bx )
+bx ?
+bx G
+bx +
+bx 9
+bx @
+bx ,
+bx A
+bx D
+b1000 *
+b1000 E
+b1000 F
+1!
+#30000
+0!
+#35000
+b1100 *
+b1100 E
+b1100 F
+1!
+#40000
+0!
+#45000
+b10000 *
+b10000 E
+b10000 F
+1!
+#50000
+0!
+#55000
+b10100 *
+b10100 E
+b10100 F
+1!
+#60000
+0!
